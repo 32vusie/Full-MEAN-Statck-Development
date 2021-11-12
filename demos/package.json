@@ -1,0 +1,11 @@
+{
+  "name": "demos",
+  "version": "1.0.0",
+  "description": "demo scholl project",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Vusimuzi Ngwalzi",
+  "license": "ISC"
+}
