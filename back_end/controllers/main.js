@@ -23,3 +23,4 @@ module.exports.register = function (request, response) {
 module.exports.forgortpassword = function (request, response) {
     response.render('forgort-password', { title: 'forgot page' });
 }
+
