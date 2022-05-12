@@ -2,102 +2,103 @@
 // data
 var providers = [
     {
-      "id": "326754",
+      "id": 326754,
       "firstname": "Nosipho",
       "lastname": "Ndebele",
       "position": "ceo",
       "company": {
         "company_name": "system32 online",
-        "address": "node scripts/build-assets.js",
-        "address2": "node scripts/build-pug.js",
-        "city": "node scripts/build-scripts.js",
-        "state": "node scripts/build-scss.js",
-        "postal_code": "node scripts/clean.js",
-        "start": "npm run build && node scripts/start.js",
-        "phone": "npm run build && node scripts/start-debug.js",
-        "emial": "node scripts/build-scss.js",
-        "description": "node scripts/clean.js",
-        "tagline": "npm run build && node scripts/start.js"
+        "address": "3103 xuma street",
+        "address2": "Emdeni ext",
+        "city": "Johannesnurg",
+        "state": "gauteng",
+        "postal_code": "1868",
+        "start": "something goes here",
+        "phone": "0783602924",
+        "emial": "ngwalazivusie@gmail.com",
+        "description": "this description is for something",
+        "tagline": "tagline of the comapy"
       }
     },
     {
-      "id": "548965",
-      "firstname": "startbootstrap",
-      "lastname": "hold",
+      "id": 548965,
+      "firstname": "Nqobile",
+      "lastname": "Ndebele",
       "position": "ceo",
       "company": {
-        "company_name": "npm run clean && npm run build:pug && npm run build:scss && npm run build:scripts && npm run build:assets",
-        "address": "node scripts/build-assets.js",
-        "address2": "node scripts/build-pug.js",
-        "city": "node scripts/build-scripts.js",
-        "state": "node scripts/build-scss.js",
-        "postal_code": "node scripts/clean.js",
-        "start": "npm run build && node scripts/start.js",
-        "phone": "npm run build && node scripts/start-debug.js",
-        "emial": "node scripts/build-scss.js",
-        "description": "node scripts/clean.js",
-        "tagline": "npm run build && node scripts/start.js"
+        "company_name": "system32 online",
+        "address": "3103 xuma street",
+        "address2": "Emdeni ext",
+        "city": "Johannesnurg",
+        "state": "gauteng",
+        "postal_code": "1868",
+        "start": "something goes here",
+        "phone": "0783602924",
+        "emial": "ngwalazivusie@gmail.com",
+        "description": "this description is for something",
+        "tagline": "tagline of the comapy"
       }
     },
     {
-      "id": "564398",
-      "firstname": "creative",
-      "lastname": "gerth",
+      "id": 564398,
+      "firstname": "Chommie",
+      "lastname": "Ndebele",
       "position": "ceo",
       "company": {
-        "company_name": "npm run clean && npm run build:pug && npm run build:scss && npm run build:scripts && npm run build:assets",
-        "address": "node scripts/build-assets.js",
-        "address2": "node scripts/build-pug.js",
-        "city": "node scripts/build-scripts.js",
-        "state": "node scripts/build-scss.js",
-        "postal_code": "node scripts/clean.js",
-        "start": "npm run build && node scripts/start.js",
-        "phone": "npm run build && node scripts/start-debug.js",
-        "emial": "node scripts/build-scss.js",
-        "description": "node scripts/clean.js",
-        "tagline": "npm run build && node scripts/start.js"
+        "company_name": "system32 online",
+        "address": "3103 xuma street",
+        "address2": "Emdeni ext",
+        "city": "Johannesnurg",
+        "state": "gauteng",
+        "postal_code": "1868",
+        "start": "something goes here",
+        "phone": "0783602924",
+        "emial": "ngwalazivusie@gmail.com",
+        "description": "this description is for something",
+        "tagline": "tagline of the comapy"
       }
     },
+    // {
+    //   "id": 078823,
+    //   "firstname": "Vusie",
+    //   "lastname": "Ngwalazi",
+    //   "position": "ceo",
+    //   "company": {
+    //     "company_name": "system32 online",
+    //     "address": "3103 xuma street",
+    //     "address2": "Emdeni ext",
+    //     "city": "Johannesnurg",
+    //     "state": "gauteng",
+    //     "postal_code": "1868",
+    //     "start": "something goes here",
+    //     "phone": "0783602924",
+    //     "emial": "ngwalazivusie@gmail.com",
+    //     "description": "this description is for something",
+    //     "tagline": "tagline of the comapy"
+    //   }
+    // },
     {
-      "id": "078723",
-      "firstname": "startive",
-      "lastname": "fether",
+      "id": 215643,
+      "firstname": "Thando",
+      "lastname": "Hadeni",
       "position": "ceo",
       "company": {
-        "company_name": "npm run clean && npm run build:pug && npm run build:scss && npm run build:scripts && npm run build:assets",
-        "address": "node scripts/build-assets.js",
-        "address2": "node scripts/build-pug.js",
-        "city": "node scripts/build-scripts.js",
-        "state": "node scripts/build-scss.js",
-        "postal_code": "node scripts/clean.js",
-        "start": "npm run build && node scripts/start.js",
-        "phone": "npm run build && node scripts/start-debug.js",
-        "emial": "node scripts/build-scss.js",
-        "description": "node scripts/clean.js",
-        "tagline": "npm run build && node scripts/start.js"
-      }
-    },
-    {
-      "id": "215643",
-      "firstname": "start strap creative",
-      "lastname": "hether",
-      "position": "ceo",
-      "company": {
-        "company_name": "npm run clean && npm run build:pug && npm run build:scss && npm run build:scripts && npm run build:assets",
-        "address": "node scripts/build-assets.js",
-        "address2": "node scripts/build-pug.js",
-        "city": "node scripts/build-scripts.js",
-        "state": "node scripts/build-scss.js",
-        "postal_code": "node scripts/clean.js",
-        "start": "npm run build && node scripts/start.js",
-        "phone": "npm run build && node scripts/start-debug.js",
-        "emial": "node scripts/build-scss.js",
-        "description": "node scripts/clean.js",
-        "tagline": "npm run build && node scripts/start.js"
+        "company_name": "top style",
+        "address": "3103 xuma street",
+        "address2": "Emdeni ext",
+        "city": "Johannesnurg",
+        "state": "gauteng",
+        "postal_code": "1868",
+        "start": "something goes here",
+        "phone": "0783602924",
+        "emial": "ngwalazivusie@gmail.com",
+        "description": "this description is for something",
+        "tagline": "tagline of the comapy"
       }
     }
   ]
   
   
 
-module.exports = providers;
+module.exports.providers = providers;
+console.log(exports)

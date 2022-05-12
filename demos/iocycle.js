@@ -2,6 +2,7 @@ let fs = require('fs')
 
 let total = 0
 
+// the io cycle
 fs.readFile('/indexjs', ()=>{
     // LASTLY THE setTimeout IS LAST 
     setTimeout(print2, 0)
