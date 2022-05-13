@@ -8,3 +8,4 @@ router.get('/', providersController.list);
 router.get('/details/:id', providersController.details);
 
 module.exports = router;
+ 

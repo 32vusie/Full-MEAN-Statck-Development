@@ -1,52 +1,79 @@
 <!-- About-->
-<section class="page-section bg-primary" id="providers">
-    <div class="container px-4 px-lg-5">
-        <div class="row gx-4 gx-lg-5 justify-content-center">
-            <div class="col-lg-8 text-center">
-                <h2 class="text-white mt-0">We've got what you need!</h2>
-                <hr class="divider divider-light" />
-                <p class="text-white-75 mb-4">Start Bootstrap has everything you need to get your new website up and running in no time! Choose one of our open source, free to download, and easy to use themes! No strings attached!</p>
-                <a class="btn btn-light btn-xl" href="#services">Get Started!</a>
-            </div>
-        </div>
+<section class="page-section bg-primary" id="sections">
+  <div class="container px-4 px-lg-5">
+    <div class="row gx-4 gx-lg-5 justify-content-center">
+      <div class="col-lg-8 text-center">
+        <h2 class="text-white mt-0">We've got what you need!</h2>
+        <hr class="divider divider-light" />
+        <p class="text-white-75 mb-4">Start Bootstrap has everything you need to
+          get your new website up and running in no time! Choose one of our open
+          source, free to download, and easy to use themes! No strings attached!</p>
+        <a class="btn btn-light btn-xl" href="#services">Get Started!</a>
+      </div>
     </div>
+  </div>
 </section>
 
 <!-- Provider List-->
-<section class="page-section" id="services">
-    <div class="container px-4 px-lg-5">
-        <h2 class="text-center mt-0">{{company.commpany_name}}</h2>
-        <hr class="divider" />
-        <div class="table-responsive">
-            <table class="table table-hover tablebordered">
-                <thead class="thead-light">
-                    <tr>
-                        <th scope="col">Id</th>
-                        <th scope="col">Address</th>
-                        <th scope="col">Address2</th>
-                        <th scope="col">City</th>
-                        <th scope="col">State</th>
-                        <th scope="col">Zip Code</th>
-                        <th scope="col">Phone</th>
-                    </tr>
-                    <tbody>
-                        {{#each providers}}
-                        <tr>
-                            <td scope="row" >{{ id }}</td>
-                            <td scope="row" >{{ company.addrress }}</td>
-                            <td scope="row" >{{ company.address2 }}</td>
-                            <td scope="row" >{{ company.city }}</td>
-                            <td scope="row" >{{ company.state }}</td>
-                            <td scope="row" >{{ company.postal_code }}</td>
-                            <td scope="row" >{{ company.phone }}</td>
-                            <td scope="row" >
-                                <a href="/providers/edit/{{ id }}" class="btn btn-secondary btn-sm">Edit</a>
-                            </td>
-                        </tr>
-                        {{/each}}
-                    </tbody>
-                </thead>
-            </table>
+<section class="page-section" id="providers-details">
+  <div class="container px-4 px-lg-5">
+    <h2 class="text-center mt-0">{{company.commpany_name}}</h2>
+    <hr class="divider my-4" />
+    {{! card starts here  }}
+    <div class="row my-4">
+      <div class="col-sm-6">
+        <div class="card">
+          <div class="card-body">
+            <h5 class="card-title">Description</h5>
+            <p class="card-text">{{company.description}}</p>
+            {{! <a href="#" class="btn btn-primary">Go somewhere</a> }}
+          </div>
         </div>
+      </div>
+      <div class="col-sm-6">
+        <div class="card">
+          <div class="card-body">
+            <h5 class="card-title">Tagline</h5>
+            <p class="card-text">{{company.tagline}}</p>
+            {{! <a href="#" class="btn btn-primary">Go somewhere</a> }}
+          </div>
+        </div>
+      </div>
     </div>
+    {{! data table starts here  }}
+    <div class="table-responsive">
+      <table class="table table-hover tablebordered">
+        <thead class="thead-light">
+          <tr>
+            <th scope="col">Id</th>
+            <th scope="col">Address</th>
+            <th scope="col">Address2</th>
+            <th scope="col">City</th>
+            <th scope="col">State</th>
+            <th scope="col">Zip Code</th>
+            <th scope="col">Phone</th>
+          </tr>
+        </thead>
+        <tbody>
+          {{#each providers}}
+            <tr>
+              <td scope="row">{{id}}</td>
+              <td scope="row">{{company.address}}</td>
+              <td scope="row">{{company.address2}}</td>
+              <td scope="row">{{company.city}}</td>
+              <td scope="row">{{company.state}}</td>
+              <td scope="row">{{company.postal_code}}</td>
+              <td scope="row">{{company.phone}}</td>
+            </tr>
+          {{/each}}
+        </tbody>
+      </table>
+    </div>
+    <div class="row my-4">
+      <div class="col-sm-12 text-center">
+        <a href="/providers/edit/{{id}}" class="btn btn-secondary btn-md">
+          Provider</a>
+      </div>
+    </div>
+  </div>
 </section>

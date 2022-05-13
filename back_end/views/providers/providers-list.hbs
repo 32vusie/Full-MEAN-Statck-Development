@@ -1,9 +1,9 @@
 <!-- About-->
-<section class="page-section bg-primary" id="providers">
+<section class="page-section bg-primary" id="sections">
     <div class="container px-4 px-lg-5">
         <div class="row gx-4 gx-lg-5 justify-content-center">
             <div class="col-lg-8 text-center">
-                <h2 class="text-white mt-0">We've got what you need!</h2>
+                <h2 class="text-white mt-0">{{title}}</h2>
                 <hr class="divider divider-light" />
                 <p class="text-white-75 mb-4">Start Bootstrap has everything you need to get your new website up and running in no time! Choose one of our open source, free to download, and easy to use themes! No strings attached!</p>
                 <a class="btn btn-light btn-xl" href="#services">Get Started!</a>
@@ -13,10 +13,10 @@
 </section>
 
 <!-- Provider List-->
-<section class="page-section" id="services">
+<section class="page-section" id="providers">
     <div class="container px-4 px-lg-5">
         <h2 class="text-center mt-0">At Your Service</h2>
-        <hr class="divider" />
+        <hr class="divider my-4" />
         <div class="table-responsive">
             <table class="table table-hover tablebordered">
                 <thead class="thead-light">
@@ -28,6 +28,8 @@
                         <th scope="col">Company</th>
                         <th scope="col">Actions</th>
                     </tr>
+
+                </thead>
                     <tbody>
                         {{#each providers}}
                         <tr>
@@ -35,7 +37,7 @@
                             <td scope="row" >{{ firstname }}</td>
                             <td scope="row" >{{ lastname }}</td>
                             <td scope="row" >{{ position }}</td>
-                            <td scope="row" >{{ company.comapny_name }}</td>
+                            <td scope="row" >{{ company.company_name }}</td>
                             <td scope="row" >
                                 <a href="/providers/details/{{ id }}" class="btn btn-info btn-sm">More Info...</a>
                                 <a href="/providers/edit/{{ id }}" class="btn btn-secondary btn-sm">Edit</a>
@@ -44,7 +46,6 @@
                         </tr>
                         {{/each}}
                     </tbody>
-                </thead>
             </table>
         </div>
     </div>
