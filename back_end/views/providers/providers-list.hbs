@@ -1,52 +1,67 @@
-<!-- About-->
-<section class="page-section bg-primary" id="sections">
-    <div class="container px-4 px-lg-5">
-        <div class="row gx-4 gx-lg-5 justify-content-center">
-            <div class="col-lg-8 text-center">
-                <h2 class="text-white mt-0">{{title}}</h2>
-                <hr class="divider divider-light" />
-                <p class="text-white-75 mb-4">Start Bootstrap has everything you need to get your new website up and running in no time! Choose one of our open source, free to download, and easy to use themes! No strings attached!</p>
-                <a class="btn btn-light btn-xl" href="#services">Get Started!</a>
-            </div>
-        </div>
-    </div>
-</section>
+<!-- Provider List Section -->
+<section class="page-section" id="provider-list">
+  <div class="container">
+    <h2 class="text-center mt-0">At Your Service</h2>
+    <hr class="divider my-4">
+    <div class="table-responsive">
+      <a class="btn btn-primary my-2" href="providers/add-provider/">Add New Provider</a>
+      <table class="table table-hover table-bordered">
+        <thead class="thead-light">
+          <tr>
+            <th scope="col">Id</th>
+            <th scope="col">First</th>
+            <th scope="col">Last</th>
+            <th scope="col">Position</th>
+            <th scope="col">Company</th>
+            <th scope="col">Actions</th>
+          </tr>
+        </thead>
+        <tbody>
+          {{#each providers}}
+          <tr>
+            <th scope="row">{{id}}</th>
+            <td scope="row">{{firstname}}</td>
+            <td scope="row">{{lastname}}</td>
+            <td scope="row">{{position}}</td>
+            <td scope="row">{{company.company_name}}</td>
+            {{!-- <td scope="row">{{company.company_name}}</td> --}}
+            <td>
 
-<!-- Provider List-->
-<section class="page-section" id="providers">
-    <div class="container px-4 px-lg-5">
-        <h2 class="text-center mt-0">At Your Service</h2>
-        <hr class="divider my-4" />
-        <div class="table-responsive">
-            <table class="table table-hover tablebordered">
-                <thead class="thead-light">
-                    <tr>
-                        <th scope="col">Id</th>
-                        <th scope="col">First Name</th>
-                        <th scope="col">Last Name</th>
-                        <th scope="col">Poition</th>
-                        <th scope="col">Company</th>
-                        <th scope="col">Actions</th>
-                    </tr>
+              {{!-- <td scope=""row > --}}
+                <a href="/providers/details/{{id}}" class="btn btn-info btn-sm">More info...</a>
+              <a href="/providers/edit/{{id}}" class="btn btn-secondary btn-sm">Edit</a>
+              <a href="#my{{id}}" class="btn btn-danger btn-sm" data-toggle="modal">Delete</a>
+              {{!-- </td> --}}
 
-                </thead>
-                    <tbody>
-                        {{#each providers}}
-                        <tr>
-                            <td scope="row" >{{ id }}</td>
-                            <td scope="row" >{{ firstname }}</td>
-                            <td scope="row" >{{ lastname }}</td>
-                            <td scope="row" >{{ position }}</td>
-                            <td scope="row" >{{ company.company_name }}</td>
-                            <td scope="row" >
-                                <a href="/providers/details/{{ id }}" class="btn btn-info btn-sm">More Info...</a>
-                                <a href="/providers/edit/{{ id }}" class="btn btn-secondary btn-sm">Edit</a>
-                                <a href="/providers/delete/{{ id }}" class="btn btn-danger btn-sm">Delete</a>
-                            </td>
-                        </tr>
-                        {{/each}}
-                    </tbody>
-            </table>
-        </div>
+              <!-- Modal Window - Confirmation -->
+              <div id="my{{id}}" class="modal fade">
+                <div class="modal-dialog modal-confirm">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <div class="icon-box">
+                        <i class="material-icons">&#xE5CD;</i>
+                      </div>
+                      <h4 class="modal-title">Are you sure?</h4>
+                      <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                    </div>
+                    <div class="modal-body">
+                      <p>Do you really want to delete this provider?<br>
+                        This process cannot be undone.</p>
+                    </div>
+                    <div class="modal-footer">
+                      <button type="button" class="btn btn-info btn-md" data-dismiss="modal">Cancel</button>
+                      <a href="/providers/delete/{{id}}" type="button" class="btn btn-danger btn-md">Delete</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </td>
+          </tr>
+          
+              
+          {{/each }}
+        </tbody>
+      </table>
     </div>
+  </div>
 </section>
