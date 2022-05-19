@@ -14,7 +14,7 @@ router.get('/providers', mainController.readAll);
 router.get('/providers/:id', mainController.readOne);
 
 // put /api/providers/123
-router.put('/providers', mainController.update);
+router.put('/providers/:id', mainController.update);
 
 // delete one providee /api/provider/123
 router.delete('/providers/:id', mainController.deleteOne);

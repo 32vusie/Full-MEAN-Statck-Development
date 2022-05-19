@@ -51,7 +51,7 @@ module.exports.readOne = function (require, response) {
     // serch the model data for the following id
     let provider = providers.find(provider => provider.id == id);
     response.status(200);
-    response.render(provider);
+    response.send(provider);
 }
 
 // put
