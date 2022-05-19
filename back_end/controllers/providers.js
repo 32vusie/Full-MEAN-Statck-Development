@@ -20,7 +20,7 @@ module.exports.details = function (request, response) {
     id: id,
     title: "Service Provider details ",
     company: provider.company,
-  })
+  });
 }
 
 
