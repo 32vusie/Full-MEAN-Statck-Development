@@ -19,5 +19,5 @@ router.get('/delete/:id', providersController.delete);
 
 module.exports = router;
 
-// console.log(exports)
+// console.log(providersController);
  

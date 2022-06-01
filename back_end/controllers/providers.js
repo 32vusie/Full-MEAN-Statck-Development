@@ -1,12 +1,13 @@
+const {request} = require('../app');
 const providers = require("../module/providers");
 
 // load data from providers module to page in the list table
 module.exports.list = function (request, response) {
-    // console.log(exports),
+    console.log(exports),
   response.render("providers/providers-list", {
     title: "Service Providers",
     providers : providers,
-  })
+  });
   
 }
 
@@ -39,7 +40,7 @@ module.exports.edit = function (request, response) {
 
 // load data from providers module to page in the update form
 module.exports.update = function (request, response) {
-  let id = request.params.id;
+  let id = require.params.id;
   // serch the model data for the following id
   let provider = providers.find(provider => provider.id == id);
 

@@ -362,4 +362,4 @@ var providers = [
 ];
 
 module.exports.providers = providers;
-// console.log(exports)
+console.log(providers)
